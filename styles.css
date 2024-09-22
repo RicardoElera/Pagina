@@ -12,6 +12,14 @@ header {
     padding: 50px 0;
 }
 
+.profile-image {
+    width: 100px; /* Cambia este valor para ajustar el tamaño */
+    height: 100px; /* Cambia este valor para ajustar el tamaño */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
 button, a.button {
     background-color: #4CAF50;
     color: white;
@@ -50,43 +58,3 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-button, a.button {
-    background-color: #4CAF50; /* Color inicial */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease; /* Efecto de transición */
-}
-
-button:hover, a.button:hover {
-    background-color: #45a049; /* Color al pasar el mouse */
-}
-
-.gallery-item {
-    width: calc(50% - 20px); /* Para pantallas medianas */
-}
-
-@media (max-width: 600px) {
-    .gallery-item {
-        width: 100%; /* Para pantallas pequeñas */
-    }
-}
-
-.profile-image {
-    width: 100px; /* Ajusta el tamaño según necesites */
-    height: 100px; /* Mantén la misma altura para que sea circular */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
-    margin: 20px auto; /* Centra la imagen en el encabezado */
-    display: block; /* Hace que la imagen se comporte como un bloque */
-}
-
