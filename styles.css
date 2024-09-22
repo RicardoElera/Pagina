@@ -13,8 +13,8 @@ header {
 }
 
 .profile-image {
-    width: 100px; /* Cambia este valor para ajustar el tamaño */
-    height: 100px; /* Cambia este valor para ajustar el tamaño */
+    width: 50px; /* Cambia este valor para ajustar el tamaño */
+    height: 50px; /* Cambia este valor para ajustar el tamaño */
     border-radius: 50%; /* Hace que la imagen sea circular */
     object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
     margin-bottom: 20px; /* Espacio entre la imagen y el texto */
