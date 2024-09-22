@@ -91,15 +91,20 @@ footer {
     text-align: center;
     padding: 20px;
 }
-.button-back {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 10px 20px;
-    background-color: #ff4f4f; /* Rojo suave */
-    color: white;
+/* Estilo para el botón de regreso */
+.back-button {
+    position: absolute;
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la parte derecha */
     text-decoration: none;
+    color: white;
+    padding: 10px 15px;
     border-radius: 5px;
-    font-size: 14px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 38, 0, 1); /* Fondo más oscuro al pasar el ratón */
 }
 
 .button-back:hover {
