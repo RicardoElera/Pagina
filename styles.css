@@ -95,7 +95,7 @@ footer {
 .back-button {
     position: absolute;
     top: 20px; /* Distancia desde la parte superior */
-    right: 20px; /* Distancia desde la parte derecha */
+    left: 20px; /* Distancia desde la parte derecha */
     text-decoration: none;
     color: white;
     padding: 10px 15px;
