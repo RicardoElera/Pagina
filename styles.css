@@ -13,11 +13,11 @@ header {
 }
 
 .profile-image {
-    width: 50px; /* Cambia este valor para ajustar el tamaño */
-    height: 50px; /* Cambia este valor para ajustar el tamaño */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
-    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    width: 15px; /* Cambia este valor para ajustar el tamaño */
+    height: 15px; /* Cambia este valor para ajustar el tamaño */
+    border-radius: 50%; /* Esto recorta la imagen en forma de círculo */
+    object-fit: cover; /* Asegúrate de que la imagen se recorte adecuadamente */
+    border: 2px solid #ccc; /* Opcional: un borde alrededor de la imagen */
 }
 
 button, a.button {
