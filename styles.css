@@ -16,7 +16,7 @@ header {
     height: 150px; /* Debe ser igual al ancho para mantener la forma circular */
     border-radius: 50%; /* Recorte circular */
     object-fit: cover; /* Ajusta la imagen al contenedor */
-    border: 15px solid #ccc; /* Opcional: un borde alrededor de la imagen */
+    border: 8px solid #ccc; /* Opcional: un borde alrededor de la imagen */
 }
 
 button, a.button {
