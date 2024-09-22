@@ -42,7 +42,7 @@ section {
 .gallery-item {
     width: calc(33% - 20px);
     margin-bottom: 20px;
-}
+}   
 
 .gallery-item img {
     width: 100%;
@@ -52,7 +52,7 @@ section {
 }
 
 footer {
-    background-color: #e24b4b;
+    background-color: #464646;
     color: white;
     text-align: center;
     padding: 20px;
