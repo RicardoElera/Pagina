@@ -110,3 +110,27 @@ footer {
 .button-back:hover {
     background-color: #ff1f1f;
 }
+
+/* Estilo para la sección de comisiones */
+.commissions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.commission-item {
+    width: 250px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.commission-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
