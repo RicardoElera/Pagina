@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: rgba(255, 38, 0, 0.7); /* Rojo */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.profile-image {
+    width: 150px; /* Ajusta el tamaño según prefieras */
+    height: 150px; /* Debe ser igual al ancho para mantener la forma circular */
+    border-radius: 50%; /* Recorte circular */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    border: 5px solid #ffffff; /* Opcional: un borde alrededor de la imagen */
+}
+
+button, a.button {
+    background-color: #4CAF50; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.gallery-category {
+    margin-bottom: 40px; /* Espacio entre categorías */
+}
+
+.gallery-category h3 {
+    background-color: rgba(255, 38, 0, 0.1); /* Fondo suave para el título */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+section {
+    padding: 40px 20px;
+}
+
+#portfolio .gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+}   
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #464646;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
