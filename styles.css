@@ -13,9 +13,9 @@ header {
 }
 
 .profile-image {
-    width: 100px; /* Ajusta el tamaño según lo que desees */
-    height: 100px; /* Mantén la altura igual que el ancho para que sea circular */
-    border-radius: 50%; /* Esto recorta la imagen en forma de círculo */
+    width: 150px; /* O un tamaño mayor, como 200px */
+    height: 150px; /* Asegúrate de que sea igual que el ancho */
+    border-radius: 50%; /* Esto mantiene el recorte circular */
     object-fit: cover; /* Asegúrate de que la imagen se recorte adecuadamente */
     border: 2px solid #ccc; /* Opcional: un borde alrededor de la imagen */
 }
