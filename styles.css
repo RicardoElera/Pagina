@@ -11,6 +11,29 @@ header {
     padding: 50px 0;
 }
 
+/* Estilos para el nav */
+nav {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la parte derecha */
+}
+
+nav a {
+    margin-left: 20px; /* Espaciado entre los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    color: white; /* Cambia el color del texto según el diseño */
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+    font-weight: bold;
+    background-color: rgba(255, 38, 0, 0.7); /* Fondo rojo suave */
+    padding: 10px 15px; /* Espaciado interno de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+nav a:hover {
+    background-color: rgba(255, 38, 0, 1); /* Cambia el color del fondo cuando se pasa el ratón */
+}
+
+
 .profile-image {
     width: 200px; /* Ajusta el tamaño según prefieras */
     height: 200px; /* Debe ser igual al ancho para mantener la forma circular */
