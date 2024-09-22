@@ -6,17 +6,17 @@ body {
 }
 
 header {
-    background-color: rgba(255, 38, 0, 0.7); /* Rojo */
+    background-color: rgb(151 38 19 / 87%);
     text-align: center;
     padding: 50px 0;
 }
 
 .profile-image {
-    width: 150px; /* Ajusta el tamaño según prefieras */
-    height: 150px; /* Debe ser igual al ancho para mantener la forma circular */
+    width: 200px; /* Ajusta el tamaño según prefieras */
+    height: 200px; /* Debe ser igual al ancho para mantener la forma circular */
     border-radius: 50%; /* Recorte circular */
     object-fit: cover; /* Ajusta la imagen al contenedor */
-    border: 5px solid #ffffff; /* Opcional: un borde alrededor de la imagen */
+    border: 3px solid #ffffff; /* Opcional: un borde alrededor de la imagen */
 }
 
 button, a.button {
