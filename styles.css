@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: rgba(192, 58, 34, 0.7); /* Rojo suave */
+    background-color: rgba(173, 34, 9, 0.7); /* Rojo suave */
     text-align: center;
     padding: 50px 0;
 }
@@ -16,7 +16,7 @@ header {
     height: 150px; /* Debe ser igual al ancho para mantener la forma circular */
     border-radius: 50%; /* Recorte circular */
     object-fit: cover; /* Ajusta la imagen al contenedor */
-    border: 2px solid #ccc; /* Opcional: un borde alrededor de la imagen */
+    border: 15px solid #ccc; /* Opcional: un borde alrededor de la imagen */
 }
 
 button, a.button {
