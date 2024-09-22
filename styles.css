@@ -82,9 +82,11 @@ button:hover, a.button:hover {
 }
 
 .profile-image {
-    width: 100px; /* Ajusta el tamaño según tu preferencia */
-    height: 100px; /* Debe ser igual al ancho para mantener la forma circular */
-    border-radius: 50%; /* Esto hace que la imagen sea circular */
-    object-fit: cover; /* Esto asegura que la imagen mantenga su aspecto */
-    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    width: 100px; /* Ajusta el tamaño según necesites */
+    height: 100px; /* Mantén la misma altura para que sea circular */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    margin: 20px auto; /* Centra la imagen en el encabezado */
+    display: block; /* Hace que la imagen se comporte como un bloque */
 }
+
