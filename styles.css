@@ -69,3 +69,17 @@ footer {
     text-align: center;
     padding: 20px;
 }
+.button-back {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #ff4f4f; /* Rojo suave */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.button-back:hover {
+    background-color: #ff1f1f;
+}
