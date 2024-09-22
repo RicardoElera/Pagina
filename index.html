@@ -1,56 +1,103 @@
-<section id="portfolio">
-    <h2>Galería de Arte</h2>
-    <div class="gallery">
-        <div class="gallery-category">
-            <h3>Icons - 10 USD</h3>
-            <div class="gallery-item">
-                <img src="icon1.jpg" alt="Icono 1">
-                <p>Descripción del Icono 1</p>
-            </div>
-            <div class="gallery-item">
-                <img src="icon2.jpg" alt="Icono 2">
-                <p>Descripción del Icono 2</p>
-            </div>
-            <!-- Añade más iconos aquí -->
-        </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de arte de Kaijo, donde puedes explorar mis obras y solicitar comisiones personalizadas.">
+    <meta name="keywords" content="arte, portafolio, comisiones, arte digital, arte tradicional">
+    <title>Portafolio de Arte - Comisiones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="mi-imagen.jpg" alt="Mi imagen" class="profile-image">
+        <h1>Bienvenido a mi Portafolio de Arte</h1>
+        <p>Explora mi trabajo y solicita una comisión personalizada.</p>
+        <a href="#portfolio" class="button">Ver Portafolio</a>
+    </header>
 
-        <div class="gallery-category">
-            <h3>Ilustración - 20 USD</h3>
-            <div class="gallery-item">
-                <img src="ilustracion1.jpg" alt="Ilustración 1">
-                <p>Descripción de la Ilustración 1</p>
+    <section id="portfolio">
+        <h2>Galería de Arte</h2>
+        <div class="gallery">
+            <div class="gallery-category">
+                <h3>Icons - 10 USD</h3>
+                <div class="gallery-item">
+                    <img src="icon1.jpg" alt="Icono 1">
+                    <p>Descripción del Icono 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="icon2.jpg" alt="Icono 2">
+                    <p>Descripción del Icono 2</p>
+                </div>
+                <!-- Añade más iconos aquí -->
             </div>
-            <div class="gallery-item">
-                <img src="ilustracion2.jpg" alt="Ilustración 2">
-                <p>Descripción de la Ilustración 2</p>
+    
+            <div class="gallery-category">
+                <h3>Ilustración - 20 USD</h3>
+                <div class="gallery-item">
+                    <img src="ilustracion1.jpg" alt="Ilustración 1">
+                    <p>Descripción de la Ilustración 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="ilustracion2.jpg" alt="Ilustración 2">
+                    <p>Descripción de la Ilustración 2</p>
+                </div>
+                <!-- Añade más ilustraciones aquí -->
             </div>
-            <!-- Añade más ilustraciones aquí -->
+    
+            <div class="gallery-category">
+                <h3>Emotes - 10 USD</h3>
+                <div class="gallery-item">
+                    <img src="emote1.jpg" alt="Emote 1">
+                    <p>Descripción del Emote 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="emote2.jpg" alt="Emote 2">
+                    <p>Descripción del Emote 2</p>
+                </div>
+                <!-- Añade más emotes aquí -->
+            </div>
+    
+            <div class="gallery-category">
+                <h3>Emotes Animados (3 Frames) - 15 USD</h3>
+                <div class="gallery-item">
+                    <img src="emote-animado1.gif" alt="Emote Animado 1">
+                    <p>Descripción del Emote Animado 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="emote-animado2.gif" alt="Emote Animado 2">
+                    <p>Descripción del Emote Animado 2</p>
+                </div>
+                <!-- Añade más emotes animados aquí -->
+            </div>
         </div>
+    </section>
+    
 
-        <div class="gallery-category">
-            <h3>Emotes - 10 USD</h3>
-            <div class="gallery-item">
-                <img src="emote1.jpg" alt="Emote 1">
-                <p>Descripción del Emote 1</p>
-            </div>
-            <div class="gallery-item">
-                <img src="emote2.jpg" alt="Emote 2">
-                <p>Descripción del Emote 2</p>
-            </div>
-            <!-- Añade más emotes aquí -->
-        </div>
+    <section id="commissions">
+        <h2>Comisiones</h2>
+        <p>Ofrezco comisiones personalizadas de arte digital y tradicional. Contacta para más información sobre precios y disponibilidad.</p>
+    </section>
 
-        <div class="gallery-category">
-            <h3>Emotes Animados (3 Frames) - 15 USD</h3>
-            <div class="gallery-item">
-                <img src="emote-animado1.gif" alt="Emote Animado 1">
-                <p>Descripción del Emote Animado 1</p>
-            </div>
-            <div class="gallery-item">
-                <img src="emote-animado2.gif" alt="Emote Animado 2">
-                <p>Descripción del Emote Animado 2</p>
-            </div>
-            <!-- Añade más emotes animados aquí -->
-        </div>
-    </div>
-</section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="enviar_comision.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="commission">Tipo de Comisión:</label>
+            <textarea id="commission" name="commission" rows="5" required></textarea>
+
+            <button type="submit">Solicitar Comisión</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Sígueme en <a href="#">Instagram</a>, <a href="#">Twitter</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
