@@ -29,6 +29,18 @@ button, a.button {
     display: inline-block;
 }
 
+.gallery-category {
+    margin-bottom: 40px; /* Espacio entre categorías */
+}
+
+.gallery-category h3 {
+    background-color: rgba(255, 38, 0, 0.1); /* Fondo suave para el título */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
 section {
     padding: 40px 20px;
 }
@@ -56,14 +68,4 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-}
-.gallery-category {
-    margin-bottom: 40px; /* Espacio entre categorías */
-}
-
-.gallery-category h3 {
-    background-color: rgba(255, 38, 0, 0.1); /* Fondo suave para el título */
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
 }
