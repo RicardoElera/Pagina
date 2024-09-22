@@ -16,7 +16,7 @@ header {
     height: 150px; /* Debe ser igual al ancho para mantener la forma circular */
     border-radius: 50%; /* Recorte circular */
     object-fit: cover; /* Ajusta la imagen al contenedor */
-    border: 8px solid #ccc; /* Opcional: un borde alrededor de la imagen */
+    border: 5px solid #ffffff; /* Opcional: un borde alrededor de la imagen */
 }
 
 button, a.button {
@@ -56,4 +56,14 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+.gallery-category {
+    margin-bottom: 40px; /* Espacio entre categorías */
+}
+
+.gallery-category h3 {
+    background-color: rgba(255, 38, 0, 0.1); /* Fondo suave para el título */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
