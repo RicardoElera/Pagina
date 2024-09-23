@@ -20,16 +20,9 @@ header nav {
     margin-bottom: 20px;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    margin-bottom: 10px; /* Espaciado entre los elementos */
-}
-
 header nav a.header {
+    display: block; /* Cambiado a bloque para que se vean verticalmente */
+    margin-bottom: 10px; /* Espaciado entre los elementos */
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -150,9 +143,8 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: relative; /* Cambiado a relativo */
     width: 100%;
-    bottom: 0;
 }
 
 footer p {
