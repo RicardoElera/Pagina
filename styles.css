@@ -143,7 +143,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative; /* Cambiado a relativo */
+    position: static; /* Cambiado a estático para que se mueva con el contenido */
     width: 100%;
 }
 
