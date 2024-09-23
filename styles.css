@@ -16,15 +16,17 @@ header {
 }
 
 header nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: block; /* Cambiado a bloque */
     margin-bottom: 20px;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+}
+
+header nav ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos */
 }
 
 header nav a.header {
