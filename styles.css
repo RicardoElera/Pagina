@@ -1,103 +1,152 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #DD0000;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding: 50px 0;
 }
 
-/* Estilos para el nav */
-nav {
-    position: absolute;
-    top: 20px; /* Ajusta la distancia desde la parte superior */
-    right: 20px; /* Ajusta la distancia desde la parte derecha */
+header nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
-    margin-left: 20px; /* Espaciado entre los enlaces */
-    text-decoration: none; /* Elimina el subrayado */
-    color: white; /* Cambia el color del texto según el diseño */
-    font-size: 16px; /* Ajusta el tamaño de fuente */
-    font-weight: bold;
-    padding: 10px 15px; /* Espaciado interno de los enlaces */
-    border-radius: 5px; /* Bordes redondeados */
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-nav a:hover {
-    background-color: #BB0000;
-}
-
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ffffff;
-}
-
-/* Footer siempre al final */
-main {
-    flex: 1;
-}
-
-footer {
-    background-color: #464646;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Estilo para el botón de regreso */
-.back-button {
-    position: absolute;
-    top: 20px; /* Distancia desde la parte superior */
-    left: 20px; /* Distancia desde la parte derecha */
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
 }
 
-.back-button:hover {
-    background-color: rgba(255, 38, 0, 1);
-}
-
-.button-back:hover {
-    background-color: #ff1f1f;
-}
-
-/* Estilo para la sección de comisiones */
-.commissions-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+main {
     padding: 20px;
 }
 
-.commission-item {
-    width: 250px;
-    text-align: center;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
+/* Profile Section */
+.sobre-mi {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.commission-item img {
+.sobre-mi h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Contact Section */
+.contacto {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contacto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contacto p {
+    font-size: 1.1rem;
+}
+
+.contacto a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto a:hover {
+    color: #555;
+}
+
+/* Social Media Section */
+.redes-sociales {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.redes-sociales h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    font-size: 1.1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    
+    .sobre-mi {
+        padding: 15px;
+    }
+
+    .profile-text p {
+        font-size: 1rem;
+    }
 }
