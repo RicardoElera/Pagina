@@ -6,13 +6,13 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    text-align: center; /* Centro el texto por defecto */
 }
 
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
 }
 
 header nav ul {
@@ -55,7 +55,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: center; /* Centro el texto del perfil */
 }
 
 .profile-img img {
