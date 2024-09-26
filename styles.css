@@ -10,22 +10,19 @@ body {
 }
 
 header {
-    background-color: #b82f2f; /* Color de la cabecera */
+    background-color: #d9534f; /* Color rojo atractivo */
     color: #fff;
     padding: 10px 0;
 }
 
 header nav {
-    display: flex;
-    flex-direction: row; /* Cambiado a 'row' para que estén en línea horizontal */
-    justify-content: flex-start; /* Alineación a la izquierda */
-    padding-left: 20px;
-    margin: 0;
+    display: block; 
+    margin-bottom: 20px;
 }
 
 header nav a.header {
-    display: inline-block; /* Asegura que se alineen horizontalmente */
-    margin: 0 10px; /* Espaciado horizontal entre las pestañas */
+    display: inline-block; /* Cambiado a inline-block */
+    margin: 0 10px; /* Espaciado entre los elementos */
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -33,22 +30,20 @@ header nav a.header {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    background-color: #b82f2f; /* Color de fondo de las pestañas */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
 }
 
 header nav a.header:hover {
-    background-color: #aa2b2b; /* Color al pasar el cursor */
-    color: #fff;
+    background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
+    color: #333; /* Cambia el color del texto al pasar el mouse */
 }
 
 header nav a.header:active {
-    background-color: #9b2626;
+    background-color: #ccc; /* Color al hacer clic */
 }
 
 header nav a.header.current {
-    background-color: #b82f2f; /* Color de la pestaña activa */
-    color: #fff;
+    background-color: #ddd; /* Color de fondo para la página actual */
+    color: #000;
 }
 
 main {
@@ -74,17 +69,17 @@ main {
 
 .profile-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Centro el texto del perfil */
+    align-items: center; /* Alinea verticalmente */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .profile-img img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid red; /* Borde rojo de 5px */
 }
 
 .profile-text p {
@@ -144,7 +139,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #b82f2f; /* Color del footer */
+    background-color: #d9534f; /* Color rojo atractivo */
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -159,7 +154,8 @@ footer p {
 /* Responsive */
 @media (max-width: 768px) {
     .profile-container {
-        flex-direction: column;
+        flex-direction: column; /* En dispositivos pequeños, cambia a columna */
+        align-items: center; /* Centra los elementos */
     }
     
     .sobre-mi {
