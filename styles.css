@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Color de fondo anterior */
+    background-color: #f0f0f0; /* Color de fondo */
 }
 
 header {
@@ -14,6 +14,9 @@ header {
 
 nav {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Cambia a disposición vertical */
+    align-items: flex-start; /* Alinea a la izquierda */
 }
 
 nav a {
@@ -22,6 +25,8 @@ nav a {
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    text-align: left; /* Alinear el texto a la izquierda */
 }
 
 nav a:hover {
@@ -34,6 +39,8 @@ nav .current {
 
 main {
     padding: 20px;
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
 }
 
 .sobre-mi {
