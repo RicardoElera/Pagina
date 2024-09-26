@@ -63,9 +63,9 @@ main {
 }
 
 .profile-img img {
-    width: 150px; /* Ajusta el tamaño según necesites */
-    height: auto;
-    border-radius: 5px;
+    width: 180px; /* Ajusta el tamaño según necesites */
+    height: 180px; /* Asegúrate de que la altura sea igual a la anchura para mantener la forma circular */
+    border-radius: 50%; /* Recorte en forma de círculo */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para la imagen */
 }
 
