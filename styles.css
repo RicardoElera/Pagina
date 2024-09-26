@@ -16,29 +16,32 @@ header {
 }
 
 header nav {
-    display: block;
+    display: flex; /* Cambiar a 'flex' para hacer que las pestañas se alineen horizontalmente */
+    justify-content: center; /* Alinea las pestañas al centro del contenedor */
+    gap: 10px; /* Añadir espacio entre las pestañas */
     margin-bottom: 20px;
-    text-align: left; /* Alineación a la izquierda para que las pestañas estén verticales */
-    padding-left: 20px; /* Ajusta según sea necesario */
 }
 
 header nav a.header {
-    display: block;
-    margin-bottom: 15px; /* Espaciado mayor entre las pestañas */
+    display: inline-block; /* Mantener las pestañas como bloques en línea */
+    margin: 0; /* Remover margen adicional */
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 15px 25px;
-    border-radius: 10px;
+    padding: 10px 20px; /* Ajustar el tamaño del relleno para que no se vean tan largas */
+    border-radius: 5px;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar las pestañas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para resaltar las pestañas */
+    background-color: #444; /* Añadir color de fondo a las pestañas */
+    width: auto; /* Evitar que las pestañas ocupen todo el ancho */
+    white-space: nowrap; /* Evitar que el texto de las pestañas se rompa en varias líneas */
 }
 
 header nav a.header:hover {
     background-color: #f0f0f0;
     color: #333;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Mayor sombra al pasar el mouse */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Mayor sombra al pasar el mouse */
 }
 
 header nav a.header:active {
@@ -48,14 +51,12 @@ header nav a.header:active {
 header nav a.header.current {
     background-color: #ddd;
     color: #000;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Mantener la sombra en la pestaña activa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Mantener la sombra en la pestaña activa */
 }
 
 main {
     padding: 20px;
 }
-
-/* Resto del código se mantiene igual */
 
 /* Footer */
 footer {
