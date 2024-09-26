@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #e74c3c; /* Color rojo llamativo pero no tan fuerte */
     color: #fff;
     padding: 10px 0;
 }
@@ -34,7 +34,7 @@ header nav a.header {
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #444;
+    background-color: #c0392b; /* Un tono más oscuro de rojo para los botones */
     width: auto;
     white-space: nowrap;
 }
@@ -61,7 +61,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #e74c3c; /* Mismo tono rojo que la cabecera */
     color: #fff;
     text-align: center;
     padding: 10px 0;
