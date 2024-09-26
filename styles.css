@@ -1,168 +1,81 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center; /* Centro el texto por defecto */
+    background-color: #f0f0f0; /* Color de fondo anterior */
 }
 
 header {
-    background-color: #d9534f; /* Color rojo atractivo */
-    color: #fff;
-    padding: 10px 0;
+    background-color: #c70000; /* Color rojo para la cabecera */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-header nav {
-    display: block; 
-    margin-bottom: 20px;
+nav {
+    margin-bottom: 15px;
 }
 
-header nav a.header {
-    display: inline-block; /* Cambiado a inline-block */
-    margin: 0 10px; /* Espaciado entre los elementos */
-    color: #fff;
+nav a {
+    color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s;
 }
 
-header nav a.header:hover {
-    background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
-    color: #333; /* Cambia el color del texto al pasar el mouse */
+nav a:hover {
+    background-color: #900000; /* Rojo más oscuro al pasar el cursor */
 }
 
-header nav a.header:active {
-    background-color: #ccc; /* Color al hacer clic */
-}
-
-header nav a.header.current {
-    background-color: #ddd; /* Color de fondo para la página actual */
-    color: #000;
+nav .current {
+    background-color: #900000; /* Color de fondo para el enlace actual */
 }
 
 main {
     padding: 20px;
 }
 
-/* Profile Section */
 .sobre-mi {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.sobre-mi h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
+    border-radius: 5px;
 }
 
 .profile-container {
     display: flex;
-    align-items: center; /* Alinea verticalmente */
-    text-align: left; /* Alinea el texto a la izquierda */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    margin-right: 20px;
 }
 
 .profile-img img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px; /* Espacio a la derecha de la imagen */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 5px solid red; /* Borde rojo de 5px */
+    width: 150px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para la imagen */
 }
 
-.profile-text p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #555;
+.profile-text {
+    flex: 1;
 }
 
-/* Contact Section */
-.contacto {
-    margin-top: 40px;
-    text-align: center;
+.contacto, .redes-sociales {
+    margin-top: 20px;
 }
 
-.contacto h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.contacto p {
-    font-size: 1.1rem;
-}
-
-.contacto a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contacto a:hover {
-    color: #555;
-}
-
-/* Social Media Section */
-.redes-sociales {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.redes-sociales h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.redes-sociales a {
-    margin: 0 10px;
-    font-size: 1.1rem;
-    color: #333;
-    text-decoration: none;
-}
-
-.redes-sociales a:hover {
-    color: #555;
-}
-
-/* Footer */
 footer {
-    background-color: #d9534f; /* Color rojo atractivo */
-    color: #fff;
+    background-color: #c70000; /* Color rojo para el footer */
+    color: white;
     text-align: center;
     padding: 10px 0;
-    position: static; /* Cambiado a estático para que se mueva con el contenido */
+    position: sticky; /* Asegura que el footer se mantenga al fondo */
+    bottom: 0;
     width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .profile-container {
-        flex-direction: column; /* En dispositivos pequeños, cambia a columna */
-        align-items: center; /* Centra los elementos */
-    }
-    
-    .sobre-mi {
-        padding: 15px;
-    }
-
-    .profile-text p {
-        font-size: 1rem;
-    }
 }
