@@ -40,13 +40,13 @@ header nav a.header {
 }
 
 header nav a.header:hover {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #ff7f7f; /* Un rojo más claro para hover */
+    color: #fff; /* Mantenemos el texto blanco */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 header nav a.header:active {
-    background-color: #ccc;
+    background-color: #ff6f6f; /* Color un poco más fuerte al hacer clic */
 }
 
 header nav a.header.current {
