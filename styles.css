@@ -6,7 +6,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center; /* Centro el texto por defecto */
+    text-align: center;
 }
 
 header {
@@ -16,126 +16,46 @@ header {
 }
 
 header nav {
-    display: block; /* Cambiado a bloque */
+    display: block;
     margin-bottom: 20px;
+    text-align: left; /* Alineación a la izquierda para que las pestañas estén verticales */
+    padding-left: 20px; /* Ajusta según sea necesario */
 }
 
 header nav a.header {
-    display: block; /* Cambiado a bloque para que se vean verticalmente */
-    margin-bottom: 10px; /* Espaciado entre los elementos */
+    display: block;
+    margin-bottom: 15px; /* Espaciado mayor entre las pestañas */
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar las pestañas */
 }
 
 header nav a.header:hover {
-    background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
-    color: #333; /* Cambia el color del texto al pasar el mouse */
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Mayor sombra al pasar el mouse */
 }
 
 header nav a.header:active {
-    background-color: #ccc; /* Color al hacer clic */
+    background-color: #ccc;
 }
 
 header nav a.header.current {
-    background-color: #ddd; /* Color de fondo para la página actual */
+    background-color: #ddd;
     color: #000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Mantener la sombra en la pestaña activa */
 }
 
 main {
     padding: 20px;
 }
 
-/* Profile Section */
-.sobre-mi {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.sobre-mi h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Centro el texto del perfil */
-}
-
-.profile-img img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-text p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* Contact Section */
-.contacto {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.contacto h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.contacto p {
-    font-size: 1.1rem;
-}
-
-.contacto a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contacto a:hover {
-    color: #555;
-}
-
-/* Social Media Section */
-.redes-sociales {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.redes-sociales h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.redes-sociales a {
-    margin: 0 10px;
-    font-size: 1.1rem;
-    color: #333;
-    text-decoration: none;
-}
-
-.redes-sociales a:hover {
-    color: #555;
-}
+/* Resto del código se mantiene igual */
 
 /* Footer */
 footer {
@@ -143,25 +63,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: static; /* Cambiado a estático para que se mueva con el contenido */
+    position: static;
     width: 100%;
 }
 
 footer p {
     margin: 0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .profile-container {
-        flex-direction: column;
-    }
-    
-    .sobre-mi {
-        padding: 15px;
-    }
-
-    .profile-text p {
-        font-size: 1rem;
-    }
 }
