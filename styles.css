@@ -6,26 +6,26 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center;
-    min-height: 100vh; /* Para asegurar que el footer se mantenga abajo */
-    display: flex;
-    flex-direction: column;
+    text-align: center; /* Centro el texto por defecto */
 }
 
 header {
-    background-color: #cc3a3a; /* Color rojo llamativo, pero no tan fuerte */
+    background-color: #b82f2f; /* Color de la cabecera */
     color: #fff;
     padding: 10px 0;
 }
 
 header nav {
-    display: block;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row; /* Cambiado a 'row' para que estén en línea horizontal */
+    justify-content: flex-start; /* Alineación a la izquierda */
+    padding-left: 20px;
+    margin: 0;
 }
 
 header nav a.header {
-    display: block;
-    margin-bottom: 10px;
+    display: inline-block; /* Asegura que se alineen horizontalmente */
+    margin: 0 10px; /* Espaciado horizontal entre las pestañas */
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -33,10 +33,12 @@ header nav a.header {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    background-color: #b82f2f; /* Color de fondo de las pestañas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
 }
 
 header nav a.header:hover {
-    background-color: #aa2b2b; /* Ajuste para que combine mejor con el rojo */
+    background-color: #aa2b2b; /* Color al pasar el cursor */
     color: #fff;
 }
 
@@ -45,13 +47,12 @@ header nav a.header:active {
 }
 
 header nav a.header.current {
-    background-color: #b82f2f;
+    background-color: #b82f2f; /* Color de la pestaña activa */
     color: #fff;
 }
 
 main {
     padding: 20px;
-    flex: 1; /* Para que el contenido principal ocupe el espacio restante */
 }
 
 /* Profile Section */
@@ -75,7 +76,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: center; /* Centro el texto del perfil */
 }
 
 .profile-img img {
@@ -143,29 +144,16 @@ main {
 
 /* Footer */
 footer {
-    background-color: #cc3a3a; /* Rojo similar a la cabecera */
+    background-color: #b82f2f; /* Color del footer */
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: static; /* Cambiado a estático para que se mueva con el contenido */
     width: 100%;
-    position: sticky; /* Mantiene el footer en la parte inferior */
-    bottom: 0;
 }
 
 footer p {
     margin: 0;
-}
-
-/* Pestañas verticales a la izquierda */
-header nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
-}
-
-header nav a.header {
-    text-align: left; /* Alinea el texto a la izquierda */
 }
 
 /* Responsive */
@@ -180,10 +168,5 @@ header nav a.header {
 
     .profile-text p {
         font-size: 1rem;
-    }
-
-    header nav {
-        padding-left: 0;
-        align-items: center;
     }
 }
