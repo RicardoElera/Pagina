@@ -3,101 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de arte de Kaijo, donde puedes explorar mis obras y solicitar comisiones personalizadas.">
-    <meta name="keywords" content="arte, portafolio, comisiones, arte digital, arte tradicional">
-    <title>Portafolio de Arte - Comisiones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <title>Portafolio de Arte - Kaijo</title>
 </head>
 <body>
     <header>
-        <img src="imagenes/mi-imagen.jpg" alt="Mi imagen" class="profile-image">
-        <h1>Bienvenido a mi Portafolio de Arte</h1>
-        <p>Explora mi trabajo y solicita una comisión personalizada.</p>
-        <a href="#portfolio" class="button">Ver Portafolio</a>
+        <a href="#" class="logo">Kaijo</a>
+        <nav>
+            <a href="#" class="active">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Educación</a>
+            <a href="#">Experiencia</a>
+            <a href="#">Contacto</a>
+        </nav>
     </header>
 
-    <section id="portfolio">
-        <h2>Galería de Arte</h2>
-        <div class="gallery">
-            <div class="gallery-category">
-                <h3>Icons - 10 USD</h3>
-                <div class="gallery-item">
-                    <img src="icon1.jpg" alt="Icono 1">
-                    <p>Descripción del Icono 1</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="icon2.jpg" alt="Icono 2">
-                    <p>Descripción del Icono 2</p>
-                </div>
-                <!-- Añade más iconos aquí -->
+    <section class="home">
+        <div class="home-img">
+            <img src="inicio.jpg" alt="Imagen principal">
+        </div>
+        <div class="home-content">
+            <h1>Hola, soy <span>Kaijo</span></h1>
+            <h3 class="typing-text">Soy un <span></span></h3>
+            <p>Artista digital, estudiante de Ingeniería de Sistemas y creador de contenido. Explora mi portafolio y descubre más sobre mi trabajo y mis servicios.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-    
-            <div class="gallery-category">
-                <h3>Ilustración - 20 USD</h3>
-                <div class="gallery-item">
-                    <img src="ilustracion1.jpg" alt="Ilustración 1">
-                    <p>Descripción de la Ilustración 1</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="ilustracion2.jpg" alt="Ilustración 2">
-                    <p>Descripción de la Ilustración 2</p>
-                </div>
-                <!-- Añade más ilustraciones aquí -->
-            </div>
-    
-            <div class="gallery-category">
-                <h3>Emotes - 10 USD</h3>
-                <div class="gallery-item">
-                    <img src="emote1.jpg" alt="Emote 1">
-                    <p>Descripción del Emote 1</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="emote2.jpg" alt="Emote 2">
-                    <p>Descripción del Emote 2</p>
-                </div>
-                <!-- Añade más emotes aquí -->
-            </div>
-    
-            <div class="gallery-category">
-                <h3>Emotes Animados (3 Frames) - 15 USD</h3>
-                <div class="gallery-item">
-                    <img src="emote-animado1.gif" alt="Emote Animado 1">
-                    <p>Descripción del Emote Animado 1</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="emote-animado2.gif" alt="Emote Animado 2">
-                    <p>Descripción del Emote Animado 2</p>
-                </div>
-                <!-- Añade más emotes animados aquí -->
-            </div>
+            <a href="#" class="btn">Contrátame</a>
         </div>
     </section>
-    
-
-    <section id="commissions">
-        <h2>Comisiones</h2>
-        <p>Ofrezco comisiones personalizadas de arte digital y tradicional. Contacta para más información sobre precios y disponibilidad.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contacto</h2>
-        <form action="enviar_comision.php" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="commission">Tipo de Comisión:</label>
-            <textarea id="commission" name="commission" rows="5" required></textarea>
-
-            <button type="submit">Solicitar Comisión</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>Sígueme en <a href="#">Instagram</a>, <a href="#">Twitter</a></p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>
